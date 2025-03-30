@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyApi</name>
+    </assembly>
+    <members>
+        <member name="T:MyApi.ApplicationServices.Helpers.JokeHelper">
+            <summary>
+            Contains helper methods to handle jokes.
+            </summary>
+        </member>
+        <member name="M:MyApi.ApplicationServices.Helpers.JokeHelper.FetchUniqueJokesAsync(System.Int32,System.Int32,System.String[],MyApi.BackingServices.IJsonFeed,System.Collections.Generic.List{MyApi.Models.JokeResponse})">
+            <summary>
+            Handles fetching jokes (initial and retries) while ensuring uniqueness.
+            </summary>
+            <param name="numberOfJokes">Number of required jokes</param>
+            <param name="maxRetries">maximum retries allowed</param>
+            <param name="categories">joke category</param>
+            <param name="jsonFeed">json feed service</param>
+            <param name="jokeList">unique final joke list</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyApi.ApplicationServices.Helpers.JokeHelper.ProcessJokes(MyApi.Models.JokeResponse[],System.Collections.Generic.List{MyApi.Models.JokeResponse})">
+            <summary>
+            Ensuring uniqueness before adding them to the joke list.
+            </summary>
+            <param name="jokeResponses"></param>
+            <param name="jokeList"></param>
+        </member>
+        <member name="T:MyApi.ApplicationServices.IJokeService">
+            <summary>
+            Provides methods for retrieving jokes and joke categories.
+            </summary>
+        </member>
+        <member name="M:MyApi.ApplicationServices.IJokeService.GetCategoriesAsync">
+            <summary>
+            Retrieves a list of joke categories asynchronously.
+            </summary>
+            <returns>objects representing available joke categories</returns>
+        </member>
+        <member name="M:MyApi.ApplicationServices.IJokeService.GetJokesAsync(System.String,System.Int32)">
+            <summary>
+            Retrieves a list of jokes for a specified category and quantity.
+            </summary>
+            <param name="category">The category of jokes to retrieve.</param>
+            <param name="number">The number of jokes to retrieve.</param>
+            <returns>list of jokes</returns>
+        </member>
+        <member name="T:MyApi.ApplicationServices.JokeService">
+            <summary>
+            Provides services for retrieving jokes and joke categories.
+            </summary>
+        </member>
+        <member name="F:MyApi.ApplicationServices.JokeService._jsonFeed">
+            <summary>
+            A JSON feed interface used to retrieve joke data and categories.
+            </summary>
+        </member>
+        <member name="F:MyApi.ApplicationServices.JokeService._maxRetries">
+            <summary>
+            The application configuration used to retrieve settings (e.g., max retries).
+            </summary>
+        </member>
+        <member name="M:MyApi.ApplicationServices.JokeService.#ctor(MyApi.BackingServices.IJsonFeed,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the JokeService class.
+            </summary>
+            <param name="jsonFeed">The IJssonFeed implementation for retrieving jokes and categories.</param>
+            <param name="configuration">The instance for accessing app settings.</param>
+        </member>
+        <member name="M:MyApi.ApplicationServices.JokeService.GetCategoriesAsync">
+            <summary>
+            Retrieves a list of available joke categories asynchronously.
+            </summary>
+            <returns>a list of CategoryDto objects representing joke categories</returns>
+        </member>
+        <member name="M:MyApi.ApplicationServices.JokeService.GetJokesAsync(System.String,System.Int32)">
+            <summary>
+            Retrieves a specified number of jokes for a given category asynchronously.
+            </summary>
+            <param name="category">The category from which to retrieve jokes.</param>
+            <param name="number">The number of jokes to retrieve.</param>
+            <returns>a list of JokeDto objects representing the jokes.</returns>
+        </member>
+        <member name="T:MyApi.ApplicationServices.Mappers.CategoryMapper">
+            <summary>
+            Mapper class for categories
+            </summary>
+        </member>
+        <member name="M:MyApi.ApplicationServices.Mappers.CategoryMapper.ToCategoryDtoList(System.Collections.Generic.LinkedList{System.String})">
+            <summary>
+            Maps Category to Category data transfer objects.
+            </summary>
+            <param name="categories">list of categories</param>
+            <returns>list of category DTO</returns>
+        </member>
+        <member name="T:MyApi.ApplicationServices.Mappers.JokeMapper">
+            <summary>
+            Mapper class for jokes
+            </summary>
+        </member>
+        <member name="M:MyApi.ApplicationServices.Mappers.JokeMapper.ToJokeDtoList(System.Collections.Generic.List{MyApi.Models.JokeResponse})">
+            <summary>
+            Maps Joke to Joke data transfer objects.
+            </summary>
+            <param name="apiResponse">list of joke response</param>
+            <returns>list of joke DTO</returns>
+        </member>
+        <member name="T:MyApi.BackingServices.IJsonFeed">
+            <summary>
+            Defines methods for retrieving joke data from a JSON-based data source.
+            </summary>
+        </member>
+        <member name="M:MyApi.BackingServices.IJsonFeed.GetCategoriesAsync">
+            <summary>
+            Retrieves a list of joke categories from the JSON feed asynchronously.
+            </summary>
+            <returns>a list of joke categories.</returns>
+        </member>
+        <member name="M:MyApi.BackingServices.IJsonFeed.GetRandomJokesAsync(System.String)">
+            <summary>
+            Retrieves random joke for the specified category from the JSON feed asynchronously.
+            </summary>
+            <param name="category">The category from which to retrieve jokes.</param>
+            <returns>>Retrieved joke</returns>
+        </member>
+        <member name="T:MyApi.BackingServices.JsonFeed">
+            <summary>
+            Retrieves joke data from an external JSON API.
+            </summary>
+        </member>
+        <member name="M:MyApi.BackingServices.JsonFeed.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes the JSON feed with an HTTP client and configuration settings.
+            </summary>
+            <param name="httpClient">The client used to make HTTP requests.</param>
+            <param name="configuration">Provides the API endpoint URLs.</param>
+        </member>
+        <member name="M:MyApi.BackingServices.JsonFeed.GetCategoriesAsync">
+            <summary>
+            Gets a list of joke categories.
+            </summary>
+            <returns>A list of category names.</returns>
+        </member>
+        <member name="M:MyApi.BackingServices.JsonFeed.GetRandomJokesAsync(System.String)">
+            <summary>
+            Gets random jokes from a specific category.
+            </summary>
+            <param name="category">The category of jokes to retrieve.</param>
+            <returns>A response containing the jokes.</returns>
+        </member>
+        <member name="T:MyApi.Controllers.HealthController">
+            <summary>
+            Controller for health checking endpoints
+            </summary>
+        </member>
+        <member name="M:MyApi.Controllers.HealthController.Check">
+            <summary>
+            Simple health check endpoint that returns 200 OK when the API is running
+            </summary>
+            <returns>200 OK status when the API is healthy</returns>
+        </member>
+        <member name="T:MyApi.Controllers.JokesController">
+            <summary>
+            Controller for handling joke-related endpoints.
+            </summary>
+        </member>
+        <member name="M:MyApi.Controllers.JokesController.#ctor(MyApi.ApplicationServices.IJokeService)">
+            <summary>
+            Initializes a new instance of the JokesController.
+            </summary>
+            <param name="jokeService">The service used to retrieve jokes and categories.</param>
+        </member>
+        <member name="M:MyApi.Controllers.JokesController.GetCategories">
+            <summary>
+            Retrieves a list of joke categories.
+            </summary>
+            <returns>A list of category names.</returns>
+        </member>
+        <member name="M:MyApi.Controllers.JokesController.GetJokes(System.String,System.Int32)">
+            <summary>
+            Retrieves jokes for a specific category.
+            </summary>
+            <param name="category">The category of jokes to retrieve.</param>
+            <param name="number">The number of jokes to retrieve.</param>
+            <returns>A list of jokes.</returns>
+        </member>
+        <member name="T:MyApi.Dtos.CategoryDto">
+            <summary>
+            Represents a category with an identifier and a name.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.CategoryDto.Id">
+            <summary>
+            Gets or sets the unique identifier of the category.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.CategoryDto.Name">
+            <summary>
+            Gets or sets the name of the category.
+            </summary>
+        </member>
+        <member name="T:MyApi.Dtos.ErrorDto">
+            <summary>
+            Represents an error with a status code, a message, and optional additional details.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.ErrorDto.StatusCode">
+            <summary>
+            Gets or sets the HTTP status code of the error.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.ErrorDto.Message">
+            <summary>
+            Gets or sets a short message that describes the error.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.ErrorDto.Details">
+            <summary>
+            Gets or sets additional details about the error.
+            </summary>
+        </member>
+        <member name="T:MyApi.Dtos.JokeDto">
+            <summary>
+            Represents a joke with an icon and text.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.JokeDto.IconUrl">
+            <summary>
+            Gets or sets the URL for the joke icon.
+            </summary>
+        </member>
+        <member name="P:MyApi.Dtos.JokeDto.Value">
+            <summary>
+            Gets or sets the text content of the joke.
+            </summary>
+        </member>
+        <member name="T:MyApi.ExceptionMiddleware">
+            <summary>
+            Middleware that handles exceptions and returns a JSON error response.
+            </summary>
+        </member>
+        <member name="M:MyApi.ExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{MyApi.ExceptionMiddleware})">
+            <summary>
+            Initializes a new instance of the ExceptionMiddleware.
+            </summary>
+            <param name="next">The next middleware in the request pipeline.</param>
+            <param name="logger">The logger used to log exception details.</param>
+        </member>
+        <member name="M:MyApi.ExceptionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invokes the middleware to process HTTP requests and handle exceptions.
+            </summary>
+            <param name="context">The HTTP context for the current request.</param>
+            <returns>A task representing the middleware execution.</returns>
+        </member>
+        <member name="M:MyApi.ExceptionMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Handles exceptions by setting the response status and returning a JSON error message.
+            </summary>
+            <param name="context">The HTTP context.</param>
+            <param name="exception">The exception that occurred.</param>
+            <returns>A task that writes the error response.</returns>
+        </member>
+        <member name="T:MyApi.Models.JokeResponse">
+            <summary>
+            Represents the response received from the joke API.
+            </summary>
+        </member>
+        <member name="P:MyApi.Models.JokeResponse.IconUrl">
+            <summary>
+            Gets or sets the URL for the joke icon.
+            </summary>
+        </member>
+        <member name="P:MyApi.Models.JokeResponse.Value">
+            <summary>
+            Gets or sets the text content of the joke.
+            </summary>
+        </member>
+        <member name="T:MyApi.Program">
+            <summary>
+            Entry point for the MyApi application.
+            Configures services, middleware, and application settings.
+            </summary>
+        </member>
+        <member name="M:MyApi.Program.Main(System.String[])">
+            <summary>
+            Main method that sets up and runs the web application.
+            </summary>
+            <param name="args">Command-line arguments.</param>
+        </member>
+    </members>
+</doc>

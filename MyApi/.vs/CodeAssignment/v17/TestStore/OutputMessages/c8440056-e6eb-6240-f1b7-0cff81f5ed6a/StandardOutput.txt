@@ -1,0 +1,66 @@
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory[12]
+      Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+[40m[37mdbug[39m[22m[49m: Microsoft.Extensions.Hosting.Internal.Host[1]
+      Hosting starting
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[13]
+      Loaded hosting startup assembly MyApi
+[40m[37mdbug[39m[22m[49m: Microsoft.Extensions.Hosting.Internal.Host[2]
+      Hosting started
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/jokes/categories - - -
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      Wildcard detected, all requests with hosts will be allowed.
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Routing.Matching.DfaMatcher[1001]
+      1 candidate(s) found for the request path '/api/jokes/categories'
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Routing.Matching.DfaMatcher[1005]
+      Endpoint 'MyApi.Controllers.JokesController.GetCategories (MyApi)' with route pattern 'api/jokes/categories' is valid for the request path '/api/jokes/categories'
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware[1]
+      Request matched endpoint 'MyApi.Controllers.JokesController.GetCategories (MyApi)'
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[15]
+      Static files was skipped as the request already matched an endpoint.
+[40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'MyApi.Controllers.JokesController.GetCategories (MyApi)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetCategories", controller = "Jokes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyApi.Dtos.CategoryDto]]] GetCategories() on controller MyApi.Controllers.JokesController (MyApi).
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Execution plan of authorization filters (in the following order): None
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Execution plan of resource filters (in the following order): None
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Execution plan of exception filters (in the following order): None
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Executing controller factory for controller MyApi.Controllers.JokesController (MyApi)
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed controller factory for controller MyApi.Controllers.JokesController (MyApi)
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[11]
+      List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[4]
+      No information found on request to perform content negotiation.
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[8]
+      Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[10]
+      Attempting to select the first formatter in the output formatters list which can write the result.
+[40m[37mdbug[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[2]
+      Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyApi.Dtos.CategoryDto, MyApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action MyApi.Controllers.JokesController.GetCategories (MyApi) in 17.2767ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'MyApi.Controllers.JokesController.GetCategories (MyApi)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/jokes/categories - 200 - application/json;+charset=utf-8 59.8036ms
+[40m[37mdbug[39m[22m[49m: Microsoft.Extensions.Hosting.Internal.Host[3]
+      Hosting stopping
+[40m[37mdbug[39m[22m[49m: Microsoft.Extensions.Hosting.Internal.Host[4]
+      Hosting stopped
+[40m[37mdbug[39m[22m[49m: Microsoft.Extensions.Hosting.Internal.Host[3]
+      Hosting stopping
+[40m[37mdbug[39m[22m[49m: Microsoft.Extensions.Hosting.Internal.Host[4]
+      Hosting stopped

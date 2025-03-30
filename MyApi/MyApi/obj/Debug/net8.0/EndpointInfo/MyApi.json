@@ -1,0 +1,159 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MyApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "summary": "Simple health check endpoint that returns 200 OK when the API is running",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/jokes/categories": {
+      "get": {
+        "tags": [
+          "Jokes"
+        ],
+        "summary": "Retrieves a list of joke categories.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/jokes/{category}/{number}": {
+      "get": {
+        "tags": [
+          "Jokes"
+        ],
+        "summary": "Retrieves jokes for a specific category.",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "description": "The category of jokes to retrieve.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "number",
+            "in": "path",
+            "description": "The number of jokes to retrieve.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JokeDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JokeDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JokeDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CategoryDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Gets or sets the unique identifier of the category.",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Gets or sets the name of the category.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Represents a category with an identifier and a name."
+      },
+      "JokeDto": {
+        "type": "object",
+        "properties": {
+          "iconUrl": {
+            "type": "string",
+            "description": "Gets or sets the URL for the joke icon.",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "description": "Gets or sets the text content of the joke.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Represents a joke with an icon and text."
+      }
+    }
+  }
+}

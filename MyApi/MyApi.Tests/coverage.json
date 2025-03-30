@@ -1,0 +1,476 @@
+{
+  "MyApi.dll": {
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\JsonFeed.cs": {
+      "MyApi.JsonFeed": {
+        "System.String[] MyApi.JsonFeed::GetRandomJokes(System.String)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 36,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 108,
+              "EndOffset": 112,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 108,
+              "EndOffset": 148,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 168,
+              "EndOffset": 172,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 168,
+              "EndOffset": 219,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String[] MyApi.JsonFeed::GetCategories()": {
+          "Lines": {
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyApi.JsonFeed::.ctor()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyApi.JsonFeed::.ctor(System.String,System.Int32)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void MyApi.JsonFeed::.cctor()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Program.cs": {
+      "MyApi.Program": {
+        "System.Void MyApi.Program::Main(System.String[])": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "36": 0,
+            "39": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 144,
+              "EndOffset": 146,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 144,
+              "EndOffset": 164,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void MyApi.Program::.cctor()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Services\\JokeService.cs": {
+      "MyApi.ApplicationServices.JokeService": {
+        "System.Void MyApi.ApplicationServices.JokeService::.ctor(MyApi.BackingServices.IJsonFeedRepository)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "MyApi.ApplicationServices.JokeService/<GetCategoriesAsync>d__2": {
+        "System.Void MyApi.ApplicationServices.JokeService/<GetCategoriesAsync>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      },
+      "MyApi.ApplicationServices.JokeService/<GetJokesAsync>d__3": {
+        "System.Void MyApi.ApplicationServices.JokeService/<GetJokesAsync>d__3::MoveNext()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Models\\JokeResponse.cs": {
+      "MyApi.Models.JokeResponse": {
+        "System.String MyApi.Models.JokeResponse::get_IconUrl()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String MyApi.Models.JokeResponse::get_Value()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Mappers\\CategoryMapper.cs": {
+      "MyApi.Mappers.CategoryMapper": {
+        "System.Collections.Generic.List`1<MyApi.Dtos.CategoryDto> MyApi.Mappers.CategoryMapper::ToCategoryDtoList(System.Collections.Generic.List`1<System.String>)": {
+          "Lines": {
+            "10": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Mappers\\JokeMapper.cs": {
+      "MyApi.Mappers.JokeMapper": {
+        "System.Collections.Generic.List`1<MyApi.Dtos.JokeDto> MyApi.Mappers.JokeMapper::ToJokeDtoList(System.Collections.Generic.List`1<MyApi.Models.JokeResponse>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 72,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 72,
+              "EndOffset": 74,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Dtos\\CategoryDto.cs": {
+      "MyApi.Dtos.CategoryDto": {
+        "System.Int32 MyApi.Dtos.CategoryDto::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String MyApi.Dtos.CategoryDto::get_Name()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Dtos\\JokeDto.cs": {
+      "MyApi.Dtos.JokeDto": {
+        "System.String MyApi.Dtos.JokeDto::get_IconUrl()": {
+          "Lines": {
+            "5": 2
+          },
+          "Branches": []
+        },
+        "System.String MyApi.Dtos.JokeDto::get_Value()": {
+          "Lines": {
+            "6": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Data\\JsonFeedRepository.cs": {
+      "MyApi.BackingServices.JsonFeedRepository": {
+        "System.Void MyApi.BackingServices.JsonFeedRepository::.ctor(System.Net.Http.HttpClient)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "MyApi.BackingServices.JsonFeedRepository/<GetCategoriesAsync>d__4": {
+        "System.Void MyApi.BackingServices.JsonFeedRepository/<GetCategoriesAsync>d__4::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "26": 0,
+            "29": 0,
+            "30": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 169,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 169,
+              "EndOffset": 177,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "MyApi.BackingServices.JsonFeedRepository/<GetRandomJokesAsync>d__5": {
+        "System.Void MyApi.BackingServices.JsonFeedRepository/<GetRandomJokesAsync>d__5::MoveNext()": {
+          "Lines": {
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\balaj\\Downloads\\react-dotnet\\MyApi\\Controllers\\JokesController.cs": {
+      "MyApi.Controllers.JokesController": {
+        "System.Void MyApi.Controllers.JokesController::.ctor(MyApi.ApplicationServices.IJokeService)": {
+          "Lines": {
+            "15": 4,
+            "16": 4,
+            "17": 4,
+            "18": 4
+          },
+          "Branches": []
+        }
+      },
+      "MyApi.Controllers.JokesController/<GetCategories>d__2": {
+        "System.Void MyApi.Controllers.JokesController/<GetCategories>d__2::MoveNext()": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 0,
+            "27": 1
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 151,
+              "EndOffset": 153,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 151,
+              "EndOffset": 169,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 174,
+              "EndOffset": 176,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 174,
+              "EndOffset": 200,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "MyApi.Controllers.JokesController/<GetJokes>d__3": {
+        "System.Void MyApi.Controllers.JokesController/<GetJokes>d__3::MoveNext()": {
+          "Lines": {
+            "31": 3,
+            "32": 4,
+            "34": 2,
+            "35": 2,
+            "36": 1,
+            "37": 1,
+            "38": 3
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 32,
+              "Offset": 26,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 35,
+              "Offset": 204,
+              "EndOffset": 206,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 35,
+              "Offset": 204,
+              "EndOffset": 222,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 227,
+              "EndOffset": 229,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 227,
+              "EndOffset": 264,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

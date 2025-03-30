@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  myapp:
+    build:
+      context: ./my-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_BASE_URL=http://myapi:5277
+    depends_on:
+      - myapi
+    networks:
+      - app-network
+
+  myapi:
+    build:
+      context: ./MyApi
+      dockerfile: Dockerfile
+    ports:
+      - "5277:5277"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5277
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

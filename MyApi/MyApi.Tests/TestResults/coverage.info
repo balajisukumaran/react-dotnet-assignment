@@ -1,0 +1,268 @@
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\JsonFeed.cs
+FN:21,System.String[] MyApi.JsonFeed::GetRandomJokes(System.String)
+FNDA:0,System.String[] MyApi.JsonFeed::GetRandomJokes(System.String)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:35,0
+DA:36,0
+BRDA:26,36,0,0
+BRDA:26,36,1,0
+BRDA:35,108,1,0
+BRDA:35,108,0,0
+BRDA:35,168,1,0
+BRDA:35,168,0,0
+FN:38,System.String[] MyApi.JsonFeed::GetCategories()
+FNDA:0,System.String[] MyApi.JsonFeed::GetCategories()
+DA:39,0
+DA:40,0
+DA:42,0
+DA:43,0
+FN:14,System.Void MyApi.JsonFeed::.ctor()
+FNDA:0,System.Void MyApi.JsonFeed::.ctor()
+DA:15,0
+FN:15,System.Void MyApi.JsonFeed::.ctor(System.String,System.Int32)
+FNDA:0,System.Void MyApi.JsonFeed::.ctor(System.String,System.Int32)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+FN:12,System.Void MyApi.JsonFeed::.cctor()
+FNDA:0,System.Void MyApi.JsonFeed::.cctor()
+DA:13,0
+LF:23
+LH:0
+BRF:6
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Program.cs
+FN:17,System.Void MyApi.Program::Main(System.String[])
+FNDA:0,System.Void MyApi.Program::Main(System.String[])
+DA:18,0
+DA:19,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:36,0
+DA:39,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+BRDA:42,144,0,0
+BRDA:42,144,1,0
+FN:14,System.Void MyApi.Program::.cctor()
+FNDA:0,System.Void MyApi.Program::.cctor()
+DA:15,0
+LF:24
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Services\JokeService.cs
+FN:11,System.Void MyApi.ApplicationServices.JokeService::.ctor(MyApi.BackingServices.IJsonFeedRepository)
+FNDA:0,System.Void MyApi.ApplicationServices.JokeService::.ctor(MyApi.BackingServices.IJsonFeedRepository)
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void MyApi.ApplicationServices.JokeService/<GetCategoriesAsync>d__2::MoveNext()
+FNDA:0,System.Void MyApi.ApplicationServices.JokeService/<GetCategoriesAsync>d__2::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+FN:22,System.Void MyApi.ApplicationServices.JokeService/<GetJokesAsync>d__3::MoveNext()
+FNDA:0,System.Void MyApi.ApplicationServices.JokeService/<GetJokesAsync>d__3::MoveNext()
+DA:23,0
+DA:24,0
+DA:25,0
+LF:10
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Models\JokeResponse.cs
+FN:7,System.String MyApi.Models.JokeResponse::get_IconUrl()
+FNDA:0,System.String MyApi.Models.JokeResponse::get_IconUrl()
+DA:8,0
+FN:10,System.String MyApi.Models.JokeResponse::get_Value()
+FNDA:0,System.String MyApi.Models.JokeResponse::get_Value()
+DA:11,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Mappers\CategoryMapper.cs
+FN:9,System.Collections.Generic.List`1<MyApi.Dtos.CategoryDto> MyApi.Mappers.CategoryMapper::ToCategoryDtoList(System.Collections.Generic.List`1<System.String>)
+FNDA:0,System.Collections.Generic.List`1<MyApi.Dtos.CategoryDto> MyApi.Mappers.CategoryMapper::ToCategoryDtoList(System.Collections.Generic.List`1<System.String>)
+DA:10,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Mappers\JokeMapper.cs
+FN:9,System.Collections.Generic.List`1<MyApi.Dtos.JokeDto> MyApi.Mappers.JokeMapper::ToJokeDtoList(System.Collections.Generic.List`1<MyApi.Models.JokeResponse>)
+FNDA:0,System.Collections.Generic.List`1<MyApi.Dtos.JokeDto> MyApi.Mappers.JokeMapper::ToJokeDtoList(System.Collections.Generic.List`1<MyApi.Models.JokeResponse>)
+DA:10,0
+DA:11,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+BRDA:13,72,1,0
+BRDA:13,72,0,0
+LF:12
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Dtos\CategoryDto.cs
+FN:4,System.Int32 MyApi.Dtos.CategoryDto::get_Id()
+FNDA:0,System.Int32 MyApi.Dtos.CategoryDto::get_Id()
+DA:5,0
+FN:5,System.String MyApi.Dtos.CategoryDto::get_Name()
+FNDA:0,System.String MyApi.Dtos.CategoryDto::get_Name()
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Dtos\JokeDto.cs
+FN:4,System.String MyApi.Dtos.JokeDto::get_IconUrl()
+FNDA:2,System.String MyApi.Dtos.JokeDto::get_IconUrl()
+DA:5,2
+FN:5,System.String MyApi.Dtos.JokeDto::get_Value()
+FNDA:2,System.String MyApi.Dtos.JokeDto::get_Value()
+DA:6,2
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Data\JsonFeedRepository.cs
+FN:14,System.Void MyApi.BackingServices.JsonFeedRepository::.ctor(System.Net.Http.HttpClient)
+FNDA:0,System.Void MyApi.BackingServices.JsonFeedRepository::.ctor(System.Net.Http.HttpClient)
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:23,System.Void MyApi.BackingServices.JsonFeedRepository/<GetCategoriesAsync>d__4::MoveNext()
+FNDA:0,System.Void MyApi.BackingServices.JsonFeedRepository/<GetCategoriesAsync>d__4::MoveNext()
+DA:24,0
+DA:26,0
+DA:29,0
+DA:30,0
+DA:34,0
+DA:35,0
+BRDA:29,169,0,0
+BRDA:29,169,1,0
+FN:38,System.Void MyApi.BackingServices.JsonFeedRepository/<GetRandomJokesAsync>d__5::MoveNext()
+FNDA:0,System.Void MyApi.BackingServices.JsonFeedRepository/<GetRandomJokesAsync>d__5::MoveNext()
+DA:39,0
+DA:40,0
+DA:42,0
+DA:44,0
+DA:45,0
+LF:17
+LH:0
+BRF:2
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\balaj\Downloads\react-dotnet\MyApi\Controllers\JokesController.cs
+FN:14,System.Void MyApi.Controllers.JokesController::.ctor(MyApi.ApplicationServices.IJokeService)
+FNDA:4,System.Void MyApi.Controllers.JokesController::.ctor(MyApi.ApplicationServices.IJokeService)
+DA:15,4
+DA:16,4
+DA:17,4
+DA:18,4
+FN:21,System.Void MyApi.Controllers.JokesController/<GetCategories>d__2::MoveNext()
+FNDA:1,System.Void MyApi.Controllers.JokesController/<GetCategories>d__2::MoveNext()
+DA:22,1
+DA:23,1
+DA:24,1
+DA:25,1
+DA:26,0
+DA:27,1
+BRDA:24,151,0,1
+BRDA:24,151,1,0
+BRDA:24,174,0,1
+BRDA:24,174,1,0
+FN:30,System.Void MyApi.Controllers.JokesController/<GetJokes>d__3::MoveNext()
+FNDA:3,System.Void MyApi.Controllers.JokesController/<GetJokes>d__3::MoveNext()
+DA:31,3
+DA:32,4
+DA:34,2
+DA:35,2
+DA:36,1
+DA:37,1
+DA:38,3
+BRDA:32,26,0,1
+BRDA:32,26,1,2
+BRDA:35,204,0,2
+BRDA:35,204,1,0
+BRDA:35,227,0,1
+BRDA:35,227,1,1
+LF:17
+LH:16
+BRF:10
+BRH:7
+FNF:3
+FNH:3
+end_of_record

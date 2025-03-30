@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CDBFA3-1794-4575-8806-3825F2EA4F9C}|MyApi.Tests\\MyApi.UnitTests.csproj|c:\\users\\balaj\\downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\myapi\\myapi.tests\\controllers\\jokescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CDBFA3-1794-4575-8806-3825F2EA4F9C}|MyApi.Tests\\MyApi.UnitTests.csproj|solutionrelative:myapi.tests\\controllers\\jokescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CDBFA3-1794-4575-8806-3825F2EA4F9C}|MyApi.Tests\\MyApi.UnitTests.csproj|c:\\users\\balaj\\downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\myapi\\myapi.tests\\applicationservices\\mappers\\categorymappertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CDBFA3-1794-4575-8806-3825F2EA4F9C}|MyApi.Tests\\MyApi.UnitTests.csproj|solutionrelative:myapi.tests\\applicationservices\\mappers\\categorymappertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CDBFA3-1794-4575-8806-3825F2EA4F9C}|MyApi.Tests\\MyApi.UnitTests.csproj|c:\\users\\balaj\\downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\myapi\\myapi.tests\\applicationservices\\mappers\\jokemappertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CDBFA3-1794-4575-8806-3825F2EA4F9C}|MyApi.Tests\\MyApi.UnitTests.csproj|solutionrelative:myapi.tests\\applicationservices\\mappers\\jokemappertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E76536F-47FB-4AC9-907D-BFE65A81E340}|MyApi\\MyApi.csproj|c:\\users\\balaj\\downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\myapi\\myapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E76536F-47FB-4AC9-907D-BFE65A81E340}|MyApi\\MyApi.csproj|solutionrelative:myapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E76536F-47FB-4AC9-907D-BFE65A81E340}|MyApi\\MyApi.csproj|c:\\users\\balaj\\downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\myapi\\myapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E76536F-47FB-4AC9-907D-BFE65A81E340}|MyApi\\MyApi.csproj|solutionrelative:myapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E76536F-47FB-4AC9-907D-BFE65A81E340}|MyApi\\MyApi.csproj|c:\\users\\balaj\\downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\myapi\\myapi\\applicationservices\\jokeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E76536F-47FB-4AC9-907D-BFE65A81E340}|MyApi\\MyApi.csproj|solutionrelative:myapi\\applicationservices\\jokeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JokesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi.Tests\\Controllers\\JokesControllerTests.cs",
+              "RelativeDocumentMoniker": "MyApi.Tests\\Controllers\\JokesControllerTests.cs",
+              "ToolTip": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi.Tests\\Controllers\\JokesControllerTests.cs",
+              "RelativeToolTip": "MyApi.Tests\\Controllers\\JokesControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:36:56.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryMapperTests.cs",
+              "DocumentMoniker": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi.Tests\\ApplicationServices\\Mappers\\CategoryMapperTests.cs",
+              "RelativeDocumentMoniker": "MyApi.Tests\\ApplicationServices\\Mappers\\CategoryMapperTests.cs",
+              "ToolTip": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi.Tests\\ApplicationServices\\Mappers\\CategoryMapperTests.cs",
+              "RelativeToolTip": "MyApi.Tests\\ApplicationServices\\Mappers\\CategoryMapperTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:36:56.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JokeMapperTests.cs",
+              "DocumentMoniker": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi.Tests\\ApplicationServices\\Mappers\\JokeMapperTests.cs",
+              "RelativeDocumentMoniker": "MyApi.Tests\\ApplicationServices\\Mappers\\JokeMapperTests.cs",
+              "ToolTip": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi.Tests\\ApplicationServices\\Mappers\\JokeMapperTests.cs",
+              "RelativeToolTip": "MyApi.Tests\\ApplicationServices\\Mappers\\JokeMapperTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:36:54.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi\\Program.cs",
+              "RelativeDocumentMoniker": "MyApi\\Program.cs",
+              "ToolTip": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi\\Program.cs",
+              "RelativeToolTip": "MyApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:36:37.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "MyApi\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "MyApi\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:36:35.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JokeService.cs",
+              "DocumentMoniker": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi\\ApplicationServices\\JokeService.cs",
+              "RelativeDocumentMoniker": "MyApi\\ApplicationServices\\JokeService.cs",
+              "ToolTip": "C:\\Users\\balaj\\Downloads\\source\\geotab-fullstack-takehome\\react-dotnet\\MyApi\\MyApi\\ApplicationServices\\JokeService.cs",
+              "RelativeToolTip": "MyApi\\ApplicationServices\\JokeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:36:31.781Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
