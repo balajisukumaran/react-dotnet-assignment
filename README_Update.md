@@ -1,5 +1,3 @@
-# Geotab Application Documentation
-
 ## Table of Contents
 
 - [How to Run the Application](#how-to-run-the-application)
